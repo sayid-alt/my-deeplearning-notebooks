@@ -3,7 +3,7 @@ Precision and recall are two crucial metrics used to evaluate the performance of
 ### Precision
 **Precision** measures the accuracy of the positive predictions made by the model. It is defined as the ratio of true positive predictions to the total number of positive predictions (both true positives and false positives). In other words, it answers the question: "Of all the instances that the model predicted as positive, how many were actually positive?"
 
-\[ \text{Precision} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Positives (FP)}} \]
+$\text{Precision} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Positives (FP)}}\$
 
 - **True Positive (TP)**: The model correctly predicts the positive class.
 - **False Positive (FP)**: The model incorrectly predicts the positive class.
@@ -11,7 +11,7 @@ Precision and recall are two crucial metrics used to evaluate the performance of
 ### Recall
 **Recall** (also known as sensitivity or true positive rate) measures the model's ability to correctly identify all positive instances. It is defined as the ratio of true positive predictions to the total number of actual positive instances (both true positives and false negatives). It answers the question: "Of all the actual positive instances, how many did the model correctly identify?"
 
-\[ \text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} \]
+$\text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} \$
 
 - **False Negative (FN)**: The model incorrectly predicts the negative class.
 
@@ -31,8 +31,8 @@ Consider a scenario where we have a binary classification problem to identify wh
 
 Now, let's calculate precision and recall:
 
-\[ \text{Precision} = \frac{TP}{TP + FP} = \frac{20}{20 + 10} = \frac{20}{30} = 0.67 \]
-\[ \text{Recall} = \frac{TP}{TP + FN} = \frac{20}{20 + 10} = \frac{20}{30} = 0.67 \]
+$\text{Precision} = \frac{TP}{TP + FP} = \frac{20}{20 + 10} = \frac{20}{30} = 0.67 \$
+$\text{Recall} = \frac{TP}{TP + FN} = \frac{20}{20 + 10} = \frac{20}{30} = 0.67 \$
 
 ### Precision-Recall Trade-off
 
@@ -45,7 +45,7 @@ There is often a trade-off between precision and recall. In some cases, improvin
 
 The F1 score is the harmonic mean of precision and recall, providing a single metric that balances both concerns. It is particularly useful when the classes are imbalanced.
 
-\[ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \]
+$\text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} \$
 
 ### Summary
 

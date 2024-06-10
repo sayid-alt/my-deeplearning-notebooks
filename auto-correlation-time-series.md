@@ -21,13 +21,13 @@ Autocorrelation, also known as serial correlation, is a measure of how the value
 
 The autocorrelation of a time series at lag \( k \) is calculated using the following formula:
 
-\[ r_k = \frac{\sum_{t=k+1}^{N} (x_t - \bar{x})(x_{t-k} - \bar{x})}{\sum_{t=1}^{N} (x_t - \bar{x})^2} \]
+\$[ r_k = \frac{\sum_{t=k+1}^{N} (x_t - \bar{x})(x_{t-k} - \bar{x})}{\sum_{t=1}^{N} (x_t - \bar{x})^2} \]$
 
 Where:
-- \( r_k \) is the autocorrelation at lag \( k \).
-- \( x_t \) is the value of the time series at time \( t \).
-- \( \bar{x} \) is the mean of the time series.
-- \( N \) is the total number of observations in the time series.
+- $\( r_k \)$ is the autocorrelation at lag $\( k \)$.
+- $\( x_t \)$ is the value of the time series at time $\( t \)$.
+- $\( \bar{x} \)$ is the mean of the time series.
+- $\( N \)$ is the total number of observations in the time series.
 
 ### Example in Python
 

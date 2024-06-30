@@ -4,37 +4,51 @@ The likelihood function in the context of logistic regression represents the pro
 
 In logistic regression, the goal is to model the probability that a given input \( x \) belongs to class \( 1 \). This probability is denoted as \( \hat{y} \), and is computed using the logistic function (or sigmoid function):
 
-\[ \hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}} \]
+```math
+\hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}}
+```
 
 where \( z \) is a linear combination of the input features:
 
-\[ z = \theta^T x \]
+```math
+z = \theta^T x
+```
 
 Here, \( \theta \) represents the model parameters (weights).
 
 ### Likelihood for a Single Data Point
 
-For a single data point with input \( x \) and actual label \( y \), the likelihood function \( p(y|x) \) is defined based on the predicted probability \( \hat{y} \):
+For a single data point with input $\( x \)$ and actual label $\( y \)$, the likelihood function $\( p(y|x) \)$ is defined based on the predicted probability $\( \hat{y} \)$:
 
 1. **If the actual label \( y = 1 \):**
-   \[ p(y|x) = \hat{y} \]
+   ```math
+   p(y|x) = \hat{y}
+   ```
 
 2. **If the actual label \( y = 0 \):**
-   \[ p(y|x) = 1 - \hat{y} \]
+   ```math
+   p(y|x) = 1 - \hat{y}
+   ```
 
 These two cases can be combined into a single expression using the general form of the likelihood function:
 
-\[ p(y|x) = \hat{y}^y (1 - \hat{y})^{1-y} \]
+```math
+p(y|x) = \hat{y}^y (1 - \hat{y})^{1-y}
+```
 
 ### Explanation of the General Form
 
-The general form \( \hat{y}^y (1 - \hat{y})^{1-y} \) can be interpreted as follows:
+The general form $\( \hat{y}^y (1 - \hat{y})^{1-y} \)$ can be interpreted as follows:
 
-- When \( y = 1 \):
-  \[ p(y|x) = \hat{y}^1 (1 - \hat{y})^{1-1} = \hat{y} \]
+- When $\( y = 1 \)$:
+  ```math
+  p(y|x) = \hat{y}^1 `(1 - \hat{y})^{1-1} = \hat{y}
+  ```
   
-- When \( y = 0 \):
-  \[ p(y|x) = \hat{y}^0 (1 - \hat{y})^{1-0} = 1 \times (1 - \hat{y}) = 1 - \hat{y} \]
+- When $\( y = 0 \)$:
+  ```math
+  p(y|x) = \hat{y}^0 (1 - \hat{y})^{1-0} = 1 \times (1 - \hat{y}) = 1 - \hat{y}
+  ```
 
 This compact form allows us to write the likelihood function for any data point \( (x, y) \) in a single equation.
 
